@@ -1,0 +1,17 @@
+% Food facts
+food(apple, fruit, sweet, low_calorie).
+food(carrot, vegetable, savory, low_calorie).
+food(chicken, meat, savory, high_protein).
+food(fish, seafood, savory, high_protein).
+food(spinach, vegetable, savory, high_iron).
+food(almonds, nut, savory, high_fat).
+
+% Diet recommendations
+diet(heart_disease, [apple, carrot, chicken, fish, almonds]).
+diet(diabetes, [apple, carrot, fish, spinach, almonds]).
+diet(anemia, [spinach, chicken, fish, almonds]).
+diet(obesity, [apple, carrot, fish, spinach]).
+
+% Rule
+suggest_diet(Disease, Diet) :-
+    diet(Disease, Diet).
